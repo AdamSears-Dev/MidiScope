@@ -1,0 +1,98 @@
+body {
+  background-color: #FAF3E0; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#app {
+  text-align: center;
+}
+
+/* Wrapper for centered elements */
+.centered {
+text-align: center;
+}
+
+/* Style for the title */
+#title {
+font-family: "Helvetica", Charcoal, sans-serif; /* This font is somewhat similar to the one used for the JUNO synthesizer */
+font-size: 36px;
+margin-bottom: 20px;
+text-transform: uppercase;  /* Makes the text all uppercase */
+font-weight: bold;
+}
+
+.keys-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.piano-key {
+  width: 61.54px; 
+  height: 240px;  
+  border: 1px solid #000;
+}
+
+/* Style for the oscillator type buttons */
+button.oscillator-type {
+  width: 225px;  
+  height: 50px;  
+  font-family: "Helvetica", sans-serif;  
+  text-transform: uppercase;  
+  border: 1px solid #ccc;  
+  cursor: pointer;  /* Change cursor to pointer on hover */
+  background-color: #FAF3E0;
+}
+
+/* hover effect */
+button.oscillator-type:hover {
+  background-color: #fd5000;
+}
+
+
+/* Style for the volume label */
+label {
+font-family: "Helvetica", sans-serif; 
+font-size: 18px;
+margin-right: 10px;
+text-transform: uppercase;
+}
+
+.volume-wrapper {
+  background-color: #FAF3E0;
+}
+
+.white {
+  background-color: #FAF3E0;
+}
+
+.black {
+  width: 40px;  
+  height: 160px;  
+  background-color: #000;
+  margin-left: -20px;
+  margin-right: -20px;
+  z-index: 1;
+}
+
+.active {
+  background-color: #666;
+}
+
+.spacing {
+  height: 24px;
+}
+
+
+.volume-wrapper:hover input[type="range"]::-moz-range-thumb {
+  background-color: #fd5000;
+}
+
+.volume-wrapper:hover input[type="range"]::-webkit-slider-thumb {
+  background-color: #fd5000;
+}
